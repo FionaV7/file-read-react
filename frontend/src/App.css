@@ -1,0 +1,23 @@
+.bg-dark-bg {
+  background-color: #0F172A;
+}
+
+.bg-card-bg {
+  background-color: #1E293B;
+}
+
+.text-primary-blue {
+  color: #2563EB;
+}
+
+.text-accent-blue {
+  color: #3B82F6;
+}
+
+.border-primary-blue {
+  border-color: #2563EB;
+}
+
+.hover\:bg-card-bg:hover {
+  background-color: #1E293B;
+}

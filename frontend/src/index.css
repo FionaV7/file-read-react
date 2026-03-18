@@ -1,0 +1,171 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0F172A;
+  color: #FFFFFF;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Light Theme Overrides */
+html.light body {
+  background-color: #ECECEC;
+  color: #000000;
+}
+
+html.light .bg-dark-bg {
+  background-color: #ECECEC !important;
+}
+
+html.light .bg-card-bg {
+  background-color: #FFFFFF !important;
+}
+
+html.light nav.bg-card-bg {
+  background: linear-gradient(135deg, #667EEA 0%, #764BA2 100%) !important;
+}
+
+html.light nav .text-primary-red {
+  color: #FFFFFF !important;
+}
+
+html.light nav .text-gray-300 {
+  color: #F3F4F6 !important;
+}
+
+html.light .text-white {
+  color: #000000 !important;
+}
+
+html.light .text-gray-100 {
+  color: #000000 !important;
+}
+
+html.light .text-gray-300,
+html.light .text-gray-400 {
+  color: #000000 !important;
+}
+
+html.light .text-gray-500 {
+  color: #000000 !important;
+}
+
+html.light .border-gray-700 {
+  border-color: #D1D5DB !important;
+}
+
+html.light .border-gray-600 {
+  border-color: #9CA3AF !important;
+}
+
+html.light .bg-gray-700 {
+  background-color: #E5E7EB !important;
+}
+
+html.light .bg-gray-800 {
+  background-color: #F3F4F6 !important;
+}
+
+html.light .bg-gray-900 {
+  background-color: #F9FAFB !important;
+}
+
+html.light .bg-gradient-to-br,
+html.light .bg-gradient-to-r:not(nav *),
+html.light .bg-gradient-to-b {
+  background: linear-gradient(135deg, #667EEA 0%, #764BA2 100%) !important;
+}
+
+html.light .from-card-bg,
+html.light .from-dark-bg {
+  --tw-gradient-from: #F3F4F6 !important;
+}
+
+html.light .to-gray-800,
+html.light .to-gray-900 {
+  --tw-gradient-to: #E5E7EB !important;
+}
+
+html.light input,
+html.light textarea {
+  background-color: #FFFFFF !important;
+  color: #000000 !important;
+  border-color: #D1D5DB !important;
+}
+
+html.light input::placeholder,
+html.light textarea::placeholder {
+  color: #9CA3AF !important;
+}
+
+html.light p,
+html.light pre,
+html.light div {
+  color: #000000 !important;
+}
+
+html.light button:not(.bg-primary-red):not(.bg-gradient-to-r):not(nav button) {
+  background-color: #667EEA !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.3) !important;
+}
+
+html.light button {
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.3) !important;
+}
+
+html.light .hover\:bg-gray-600:hover {
+  background-color: #D1D5DB !important;
+}
+
+html.light .hover\:bg-gray-700:hover {
+  background-color: #E5E7EB !important;
+}
+
+html.light svg {
+  color: inherit !important;
+}
+
+/* Dark Theme - Royal Blue where Light uses Purple */
+html:not(.light) nav.bg-card-bg {
+  background: linear-gradient(135deg, #1E3A8A 0%, #000000 50%, #1E3A8A 100%) !important;
+}
+
+html:not(.light) .bg-gradient-to-br,
+html:not(.light) .bg-gradient-to-r:not(nav *),
+html:not(.light) .bg-gradient-to-b {
+  background: linear-gradient(135deg, #1E3A8A 0%, #000000 50%, #1E3A8A 100%) !important;
+}
+
+html:not(.light) button:not(.bg-primary-red):not(.bg-gradient-to-r):not(nav button) {
+  background-color: #1E3A8A !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5) !important;
+}
+
+html:not(.light) button {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5) !important;
+}
+
+html:not(.light) .border-gray-700 {
+  border-color: #000000 !important;
+}
+
+html:not(.light) .border-gray-600 {
+  border-color: #1F2937 !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
